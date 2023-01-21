@@ -22,6 +22,7 @@ const Login = () => {
   };
   return (
     <div className="container">
+      <span>{user.name}</span>
       <form>
         <input
           type="text"

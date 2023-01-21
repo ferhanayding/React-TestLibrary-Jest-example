@@ -1,7 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Login from "./login/Login";
 
 function App() {
+  const b = 3;
+  const a = 2;
   return (
     <div className="App">
       <header className="App-header">
@@ -17,7 +20,15 @@ function App() {
         >
           Learn React
         </a>
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Orange</li>
+        </ul>
+        <h1 data-testid="hello">Hello</h1>
+        <span title="sum">{a * b}</span>
       </header>
+      <Login />
     </div>
   );
 }
